@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+        }
+    .lirics{
+        width: 50%;height: 50%;
+        background-color: rgb(0, 0, 0);
+        overflow: auto;
+    }
+
+        span{
+            margin-top: 1%;
+            display: block;
+        }
+        button{
+            display: block;
+            padding: .5rem;
+            margin-left: 10rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="lirics">
+    </div>
+    <div class="controll">
+        <input type="text" placeholder="line" id="line">
+        <input type="number" placeholder="time" id="timer">
+        <button onclick="next()">next</button>
+        <button onclick="start()">submit</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
